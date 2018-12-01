@@ -1,0 +1,352 @@
+p {
+    color: white;
+    font-size: 16px;
+}
+
+.grayparagraphtext {
+    color: darkgray;
+}
+
+.whiteparagraphtext {
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Main Navigation CSS */
+
+#mainNav {
+    min-height: 56px;
+    background-color: black;
+}
+
+.navitem {
+    color: gray;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+}
+
+/* Understanding your Camera section */
+
+#understandingcamera {
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url('../img/spotlight.jpg');
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url('../img/spotlight.jpg');
+    background-size: cover;
+    border: none; 
+}
+
+/* Camera with hotspots that emerge on hover */
+
+#camerawithhotspots {
+    position: relative;
+}
+
+.hotspotinfo {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.hotspotinfo:hover {
+    opacity: 1;
+}
+
+.hotspotdescription {
+    position: absolute;
+    text-align: left;
+    background-color: none;
+    color: white;
+    width: 300px;
+}
+
+
+#lenshotspot {
+    top: 25%;
+    left: 41%;
+    width: 25%;
+}
+
+
+#lenshotspotdescription {
+    top: 50px;
+    left: 400px;   
+}
+
+#flashhotspot {
+    top: 0%;
+    left: 43%;
+    width: 25%;
+}
+
+#flashhotspotdescription {
+    top: 50px;
+    left: 380px;   
+}
+
+#modehotspot {
+    top: 9%;
+    left: 33%;
+    width: 15%;
+}
+
+#modehotspotdescription {
+    top: -100px;
+    left: -350px;
+}
+
+#shutterhotspot {
+    top: 21%;
+    left: 31%;
+    width: 8%;
+}
+
+#shutterhotspotdescription {
+    top: -97px;
+    left: -360px;   
+}
+
+/* Setting up your Camera section */
+
+#settingupcamera {
+    width: 100%;
+    height: auto;
+    min-height: 50rem;
+    padding: 15rem 0;
+    padding-top: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/setupcamera.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/setupcamera.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 0px;
+}
+
+/* Flex Box to contain information about setting up/prepping camera */
+
+.flex-container {
+    position: relative;
+    top: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    align-content: flex-start;
+}
+
+/* Light Pollution section */
+
+
+#lightpollution {
+    position: inherit;
+    width: 100%;
+    height: 1200px;
+    min-height: 50rem;
+    padding: 15rem 0;
+    padding-top: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/darksky.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/darksky.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* Map of light pollution */
+
+#lightpollutionmap {
+    width: 1000px; 
+    height: 30%;
+    min-height: 40rem;
+    margin-bottom: 10rem;
+    border: none;
+}
+
+/* Locating the stars section */
+
+#locatingstars {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 75rem;
+    padding: 15rem 0;
+    padding-top: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/milkyway.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/milkyway.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 0px;
+}
+
+
+/* Constellations within a Flexbox - connect on hover */
+
+#constellationanimations {
+    top: 0px;
+} 
+
+.constellationinfo {
+    flex-basis: 250px;
+    position: relative;
+    opacity: 0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.constellationinfo:hover {
+    opacity: 1;
+}
+
+.constellationdescription {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    color: white;
+    width: 250px;
+}
+
+#const-big-dipper {
+    opacity: 0;
+}
+
+#const-big-dipper:hover {
+    opacity: 1;
+}
+
+#bigdippername {
+    top: 25%;
+}
+
+#const-pegasus {
+    opacity: 0;
+}
+
+#const-pegasus:hover {
+    opacity: 1;
+}
+
+#pegasusname {
+    top: 25%;
+}
+
+#const-delphinus {
+    opacity: 0;
+}
+
+#const-delphinus:hover {
+    opacity: 1;
+}
+
+#delphinusname {
+    top: 25%;
+}
+
+#const-cassiopeia {
+    opacity: 0;
+}
+
+#const-cassiopeia:hover {
+    opacity: 1;
+}
+
+#cassiopeianame {
+    top: 25%;    
+}
+
+#const-orion {
+    opacity: 0;
+}
+
+#const-orion:hover {
+    opacity: 1;
+}
+
+#orionname {
+    top: 25%;   
+}
+
+#const-littledipper {
+    opacity: 0;
+}
+
+#const-littledipper:hover {
+    opacity: 1;
+}
+
+#littledippername {
+    top: 25%;    
+}
+
+.path {
+    stroke-dasharray: 20;
+}
+
+/* Breaks between pages */
+
+.blackbg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 15rem;
+    background: #161616;
+    border: none;
+}
+
+/* Post Processing section */
+
+#postprocessing {
+    width: 100%;
+    height: auto;
+    min-height: 50rem;
+    padding: 15rem 0;
+    padding-top: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/postprocessing.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/postprocessing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 0px;
+}
+
+#postprocesstext {
+    width: 600px;
+    align-content: left;
+    margin: 0;
+}
+
+#icons {
+    justify-content: center;
+}
+
+.adobe {
+    margin: 15px;
+}

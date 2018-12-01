@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Astrophotography</title>
+
+        <!-- Core CSS from Boostrap Template -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for Boostrap Template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+        <!-- Custom styles for this template - Boostrap and added later by Molly -->
+        <link href="css/grayscale.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen">
+        <link href="css/stars.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container" id="layout" class="stars">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navitem">
+                            <a class="nav-link js-scroll-trigger" href="#understandingcamera">Cameras</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link js-scroll-trigger" href="#locatingstars">Stars</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link js-scroll-trigger" href="#postprocessing">Post-Processing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home/Top Section of Site -->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A beginner's guide to</h2>
+                    <h1 class="mx-auto my-0 text-uppercase">Star Photography</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Understanding your Camera Section -->
+        <section id="understandingcamera" class="about-section text-center">
+            <div class="container">
+                <div class="col-lg-8 mx-auto">
+                    <h2>understanding your</h2>
+                    <h1>Camera</h1>
+                    <br><br>
+                    <p class="text-white mb-4">Although cameras are generally straightforward, the long exposure settings required for astrophotography can be complicated to find and understand. Hover over parts of the camera below to learn more about its anatomy and functionality.</p>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <!-- Camera with hotspots -->
+            <div class="container" id="camerawithhotspots">
+                <img src="img/camera.png" width="500" height="382" class="img-fluid" alt="" >
+
+                <!--Tooltips and parts of camera on hover --> 
+                <div class="hotspotinfo" id="lenshotspot">
+                    <img src="img/lenshotspot.png">
+                    <div class="hotspotdescription" id="lenshotspotdescription">
+                        <h3>Lens</h3>
+                        <p class="grayparagraphtext">A wide-angle lens between 14 and 20mm is recommended for astrophotography. A wide opening will allow your camera's sensor to pick up as much light as possible in the shortest amount of time.</p>
+                    </div>
+                </div>        
+
+                <div class="hotspotinfo" id="flashhotspot">
+                    <img src="img/flashhotspot.png"  class="hotspot">
+                    <div class="hotspotdescription" id="flashhotspotdescription">
+                        <h3>Flash</h3>
+                        <p class="grayparagraphtext">The flash isn't necessary for star photos, but it's still an important part of a camera! Make sure it's turned off during long-exposure photography.</p>
+                    </div>
+                </div>
+
+                <div class="hotspotinfo" id="modehotspot">
+                    <img src="img/modehotspot.png"  class="hotspot">
+                    <div class="hotspotdescription" id="modehotspotdescription">
+                        <h3>Mode</h3>
+                        <p class="grayparagraphtext">A camera with manual mode functionality is essential for photographing the night sky. Manual mode allows you great flexibility to adjust your camera's ISO (brightness/darkness) and Aperture (amount of light the lens lets in) by hand.</p>
+                    </div>
+                </div>
+
+                <div class="hotspotinfo" id="shutterhotspot">
+                    <img src="img/shutterhotspot.png"  class="hotspot">
+                    <div class="hotspotdescription" id="shutterhotspotdescription">
+                        <h3>Shutter</h3>
+                        <p class="grayparagraphtext">Shutter speed determines how long incoming light is permitted to enter a camera. For example, a short shutter speed is optimal for extremely fast photos, like actions or sports. Star photography requires a long exposure of 20+ seconds to allow for ample light to enter the camera.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Break between sections -->
+        <section class="blackbg">
+            <div class="container">
+            </div>
+        </section>
+
+        <!-- Setting up your Camera Section -->
+        <section id="settingupcamera">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-3">
+                    <h2>setting up your</h2>
+                    <h1>Camera</h1>
+                    <p class="whiteparagraphtext">Striking a delicate balance of aperture, focus, exposure time,<br>and ISO are key to getting the perfect star shot.</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div style="flex-basis: 250px">
+                    <p class="grayparagraphtext">
+                        Aperture: anything at or below f/4 will work well, but an aperture around f/2.8 will allow more light to hit your lens, letting your camera process more stars.
+                    </p>
+                </div>
+                <div style="flex-basis: 250px">
+                    <p class="grayparagraphtext">
+                        Focus: Focusing on infinity (∞) will allow your camera to best process the night sky.
+                    </p>
+                </div>
+                <div style="flex-basis: 250px"><p class="grayparagraphtext">
+                    Exposure: Exposure time heavily depends on your focal length (i.e., the length of your camera's lens). An 18-55mm lens is most common with a DSLR or mirrorless camera. Take the number 500 and divide it by your focal length. With the lens mentioned above, this will be about 27 seconds.
+                    </p>
+                </div>
+                <div style="flex-basis: 250px">
+                    <p class="grayparagraphtext">
+                        ISO: The more you increase your ISO, the more noise your picture will exhibit. Start with an ISO of 800-1500 and take a practice shot to see if your photo is bright enough. If not, increase values until it is! In general, aim for an ISO of 2500-5000.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Break between sections -->
+        <section class=blackbg>
+            <div class="container">
+            </div>
+        </section>
+
+
+        <!-- Avoiding light pollution -->
+
+        <section id="lightpollution">
+            <div class="container" >
+                <div class="col-lg-8">
+                    <h2>avoiding</h2>
+                    <h1>Light Pollution</h1>
+                    <br><br>
+                    <p class="whiteparagraphtext">Moon phase, light pollution, and weather work in tandem to predict the possibility of astrophotography. First, time your photography to be on or near the night of the New Moon. Next, find a dark sky site and plan transportation accordingly. Light pollution will severely inhibit your ability to photograph (or even see!) the stars. Check out where to go for your best shot at seeing the Milky Way on the map below.</p>
+                    <br><br><br>
+                    <iframe id="lightpollutionmap" src="https://blue-marble.de/nightlights/2017"></iframe> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Break between sections -->
+        <section class=blackbg>
+            <div class="container">
+            </div>
+        </section>
+
+
+
+        <!-- Locating the Stars Section -->
+        <section id="locatingstars">
+            <div class="container">
+                <div class="col-lg-8">
+                    <h2 class="col-med-3 text-white mb-4">locating the</h2>
+                    <h1 class="col-med-3 text-white mb-4">Stars</h1>
+                    <br><br>
+                    <p class="whiteparagraphtext">The night is dark and full of...stars! Don't you want to know what<br>you're looking at? Hover over the stars below to see the most<br> common constellations gracing the night sky.</p>
+                    <br><br><br>
+                </div>
+            </div>
+
+            <!-- Constellations that should animate to connect on click or hover -->
+            <div class="flex-container" id="constellationanimations">
+
+
+                <!-- Big Dipper -->
+                <div style="flex-basis: 250px" class="constellationinfo" id="bigdippername">
+                    <svg id="const-big-dipper" width="253px" height="212px" viewBox="0 0 253 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="" class="" onMouseEnter="const1.reset().play();">
+                        <g id="bigdipper-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M238.316223,24.4646697 L196.558179,45.1124559 L148.276204,101.630929 L146.921686,162.871448 L55.4407392,167.871843 L30.502565,112.774897 C104.464904,102.929621 143.722783,99.2149653 148.276204,101.630929" id="Path" stroke="#FFFFFF" stroke-width="4" class="dhkeTYLb_0"></path>
+                            <path id="Star" fill="#EBD7FB" d="M147.5,105.75L143.679396,107.75861L144.409066,103.504305L141.318133,100.49139L145.589698,99.8706948L147.5,96L149.410302,99.8706948L153.681867,100.49139L150.590934,103.504305L151.320604,107.75861Z" class="dhkeTYLb_1"></path>
+                            <path id="Star" fill="#EBD7FB" d="M147.5,165.75L143.679396,167.75861L144.409066,163.504305L141.318133,160.49139L145.589698,159.870695L147.5,156L149.410302,159.870695L153.681867,160.49139L150.590934,163.504305L151.320604,167.75861Z" class="dhkeTYLb_2"></path>
+                            <path id="Star" fill="#EBD7FB" d="M55.5,171.75L51.6793959,173.75861L52.4090663,169.504305L49.3181326,166.49139L53.5896979,165.870695L55.5,162L57.4103021,165.870695L61.6818674,166.49139L58.5909337,169.504305L59.3206041,173.75861Z" class="dhkeTYLb_3"></path>
+                            <path id="Star" fill="#EBD7FB" d="M30.5,115.75L26.6793959,117.75861L27.4090663,113.504305L24.3181326,110.49139L28.5896979,109.870695L30.5,106L32.4103021,109.870695L36.6818674,110.49139L33.5909337,113.504305L34.3206041,117.75861Z" class="dhkeTYLb_4"></path>
+                            <path id="Star" fill="#EBD7FB" d="M197.5,47.75L193.679396,49.7586105L194.409066,45.5043052L191.318133,42.4913895L195.589698,41.8706948L197.5,38L199.410302,41.8706948L203.681867,42.4913895L200.590934,45.5043052L201.320604,49.7586105Z" class="dhkeTYLb_5"></path>
+                            <path id="Star" fill="#EBD7FB" d="M236.5,28.75L232.679396,30.7586105L233.409066,26.5043052L230.318133,23.4913895L234.589698,22.8706948L236.5,19L238.410302,22.8706948L242.681867,23.4913895L239.590934,26.5043052L240.320604,30.7586105Z" class="dhkeTYLb_6"></path>
+                        </g>
+                        <style data-made-with="vivus-instant">.dhkeTYLb_0{stroke-dasharray:453 455;stroke-dashoffset:454;}.start .dhkeTYLb_0{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_1{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_2{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_3{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_4{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_5{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}.dhkeTYLb_6{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .dhkeTYLb_6{animation:dhkeTYLb_draw 5000ms ease-in-out 0ms forwards;}@keyframes dhkeTYLb_draw{100%{stroke-dashoffset:0;}}@keyframes dhkeTYLb_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>The Big Dipper</h3>
+                        <p class="whiteparagraphtext">The Big Dipper actually isn't a constellation in and of itself! It's an asterism (star pattern), and part of the broader constellation Ursa Major (The 'Big Bear'). It is most visible in spring and summer, when it rests high in the sky.</p>
+                    </div>
+                </div>
+
+
+                <!-- Pegasus -->
+                <div style="flex-basis: 250px" class="constellationinfo" id="pegasusname">                            
+                    <svg id="const-pegasus" width="224px" height="277px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="" class="" onMouseEnter="const2.reset().play();">
+                        <defs>
+                            <path id="path-1" d="M30.5,90.75L26.6793959,92.7586105L27.4090663,88.5043052L24.3181326,85.4913895L28.5896979,84.8706948L30.5,81L32.4103021,84.8706948L36.6818674,85.4913895L33.5909337,88.5043052L34.3206041,92.7586105Z" class="mOuxkqMZ_0"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1">
+                                </feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1">
+                                </feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-3" d="M61.5,102.75L57.6793959,104.75861L58.4090663,100.504305L55.3181326,97.4913895L59.5896979,96.8706948L61.5,93L63.4103021,96.8706948L67.6818674,97.4913895L64.5909337,100.504305L65.3206041,104.75861Z" class="mOuxkqMZ_1"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-4">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-5" d="M92.5,100.75L88.6793959,102.75861L89.4090663,98.5043052L86.3181326,95.4913895L90.5896979,94.8706948L92.5,91L94.4103021,94.8706948L98.6818674,95.4913895L95.5909337,98.5043052L96.3206041,102.75861Z" class="mOuxkqMZ_2"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-6">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-7" d="M109.5,111.75L105.679396,113.75861L106.409066,109.504305L103.318133,106.49139L107.589698,105.870695L109.5,102L111.410302,105.870695L115.681867,106.49139L112.590934,109.504305L113.320604,113.75861Z" class="mOuxkqMZ_3"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-8">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-9" d="M150.5,96.75L146.679396,98.7586105L147.409066,94.5043052L144.318133,91.4913895L148.589698,90.8706948L150.5,87L152.410302,90.8706948L156.681867,91.4913895L153.590934,94.5043052L154.320604,98.7586105Z" class="mOuxkqMZ_4"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-10">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-11" d="M129.5,40.75L125.679396,42.7586105L126.409066,38.5043052L123.318133,35.4913895L127.589698,34.8706948L129.5,31L131.410302,34.8706948L135.681867,35.4913895L132.590934,38.5043052L133.320604,42.7586105Z" class="mOuxkqMZ_5"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-12">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-13" d="M96.5,60.75L92.6793959,62.7586105L93.4090663,58.5043052L90.3181326,55.4913895L94.5896979,54.8706948L96.5,51L98.4103021,54.8706948L102.681867,55.4913895L99.5909337,58.5043052L100.320604,62.7586105Z" class="mOuxkqMZ_6"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-14">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-15" d="M70.5,54.75L66.6793959,56.7586105L67.4090663,52.5043052L64.3181326,49.4913895L68.5896979,48.8706948L70.5,45L72.4103021,48.8706948L76.6818674,49.4913895L73.5909337,52.5043052L74.3206041,56.7586105Z" class="mOuxkqMZ_7"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-16">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-17" d="M41.5,38.75L37.6793959,40.7586105L38.4090663,36.5043052L35.3181326,33.4913895L39.5896979,32.8706948L41.5,29L43.4103021,32.8706948L47.6818674,33.4913895L44.5909337,36.5043052L45.3206041,40.7586105Z" class="mOuxkqMZ_8"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-18">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-19" d="M187.5,169.75L183.679396,171.75861L184.409066,167.504305L181.318133,164.49139L185.589698,163.870695L187.5,160L189.410302,163.870695L193.681867,164.49139L190.590934,167.504305L191.320604,171.75861Z" class="mOuxkqMZ_9"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-20">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-21" d="M129.5,178.75L125.679396,180.75861L126.409066,176.504305L123.318133,173.49139L127.589698,172.870695L129.5,169L131.410302,172.870695L135.681867,173.49139L132.590934,176.504305L133.320604,180.75861Z" class="mOuxkqMZ_10"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-22">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-23" d="M143.5,204.75L139.679396,206.75861L140.409066,202.504305L137.318133,199.49139L141.589698,198.870695L143.5,195L145.410302,198.870695L149.681867,199.49139L146.590934,202.504305L147.320604,206.75861Z" class="mOuxkqMZ_11"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-24">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-25" d="M140.5,237.75L136.679396,239.75861L137.409066,235.504305L134.318133,232.49139L138.589698,231.870695L140.5,228L142.410302,231.870695L146.681867,232.49139L143.590934,235.504305L144.320604,239.75861Z" class="mOuxkqMZ_12"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-26">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                            <path id="path-27" d="M118.5,254.75L114.679396,256.75861L115.409066,252.504305L112.318133,249.49139L116.589698,248.870695L118.5,245L120.410302,248.870695L124.681867,249.49139L121.590934,252.504305L122.320604,256.75861Z" class="mOuxkqMZ_13"></path>
+                            <filter x="-52.5%" y="-55.8%" width="205.1%" height="198.8%" filterUnits="objectBoundingBox" id="filter-28">
+                                <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+                                <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.843137255   0 0 0 0 0.984313725  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="pegasus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M119.150208,251.664919 L139.681867,235.725768 L144.318133,200.833228 L129.240409,173.75861 L188.892102,166.131784 L156.318133,103.75861 C147.978738,84.7488198 142.433316,71.7890514 139.681867,64.8793052 C133.155681,48.4900143 130.295277,38.3178531 129.664727,37.6277073 C128.119329,35.9362482 135.231087,54.3132159 151,92.7586105 L95.5,56.7620912 L71.3181326,51.7586105 L43.6927678,34.5 L71.3181326,51.7586105 L95.5,56.7620912 L151,92.7586105 L108.318133,107.75861 L92.3181326,99.6481839 L59.7749056,99.6481839 L30.7026072,88.1791935 L62.6818674,99.6481839 L94.3181326,99.6481839 L108.318133,107.75861 L129.240409,176.554821" id="Path-3" stroke="#FFFFFF" stroke-width="4" class="mOuxkqMZ_15"></path>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-11"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-13"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-15"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-17"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-19"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#path-21"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-21"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-23"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-25"></use>
+                            </g>
+                            <g id="Star">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-28)" xlink:href="#path-27"></use>
+                                <use fill="#EBD7FB" fill-rule="evenodd" xlink:href="#path-27"></use>
+                            </g>
+                        </g>
+                        <style data-made-with="vivus-instant">.mOuxkqMZ_0{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_0{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_1{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_2{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_3{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_4{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_5{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_6{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_6{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_7{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_7{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_8{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_8{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_9{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_9{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_10{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_10{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_11{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_11{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_12{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_12{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_13{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .mOuxkqMZ_13{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_14{stroke-dasharray:1002 1004;stroke-dashoffset:1003;}.start .mOuxkqMZ_14{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}.mOuxkqMZ_15{stroke-dasharray:882 884;stroke-dashoffset:883;}.start .mOuxkqMZ_15{animation:mOuxkqMZ_draw 5000ms ease-in-out 0ms forwards;}@keyframes mOuxkqMZ_draw{100%{stroke-dashoffset:0;}}@keyframes mOuxkqMZ_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>Pegasus</h3>
+                        <p class="whiteparagraphtext">Shaped like the winged horse in Greek mythology, Pegasus is one of the largest constellations in the night sky. It is only visible from July to January.</p>
+                    </div>
+                </div>
+
+                <!--Delphinus -->
+                <div class="constellationinfo" id="delphinusname">
+                    <svg id="const-delphinus" width="83px" height="134px" viewBox="0 0 83 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="" class="" onMouseEnter="const3.reset().play();">
+                        <g id="delphinus-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path id="Path-2" stroke="#FFFFFF" stroke-width="4" d="M19,106L31.414185,86.3200616L53,74.5502063L53,22L31.414185,34.0114757L31.414185,86.3200616" class="HtwwCHPI_0"></path>
+                            <path id="E" fill="#EBD7FB" d="M20.5,109.75L16.6793959,111.75861L17.4090663,107.504305L14.3181326,104.49139L18.5896979,103.870695L20.5,100L22.4103021,103.870695L26.6818674,104.49139L23.5909337,107.504305L24.3206041,111.75861Z" class="HtwwCHPI_1"></path>
+                            <path id="D" fill="#EBD7FB" d="M32.5,89.75L28.6793959,91.7586105L29.4090663,87.5043052L26.3181326,84.4913895L30.5896979,83.8706948L32.5,80L34.4103021,83.8706948L38.6818674,84.4913895L35.5909337,87.5043052L36.3206041,91.7586105Z" class="HtwwCHPI_2"></path>
+                            <path id="C" fill="#EBD7FB" d="M31.5,37.75L27.6793959,39.7586105L28.4090663,35.5043052L25.3181326,32.4913895L29.5896979,31.8706948L31.5,28L33.4103021,31.8706948L37.6818674,32.4913895L34.5909337,35.5043052L35.3206041,39.7586105Z" class="HtwwCHPI_3"></path>
+                            <path id="B" fill="#EBD7FB" d="M53.5,78.75L49.6793959,80.7586105L50.4090663,76.5043052L47.3181326,73.4913895L51.5896979,72.8706948L53.5,69L55.4103021,72.8706948L59.6818674,73.4913895L56.5909337,76.5043052L57.3206041,80.7586105Z" class="HtwwCHPI_4"></path>
+                            <path id="A" fill="#EBD7FB" d="M54.5,25.75L50.6793959,27.7586105L51.4090663,23.5043052L48.3181326,20.4913895L52.5896979,19.8706948L54.5,16L56.4103021,19.8706948L60.6818674,20.4913895L57.5909337,23.5043052L58.3206041,27.7586105Z" class="HtwwCHPI_5"></path>
+                        </g>
+                        <style data-made-with="vivus-instant">.HtwwCHPI_0{stroke-dasharray:178 180;stroke-dashoffset:179;}.start .HtwwCHPI_0{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}.HtwwCHPI_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .HtwwCHPI_1{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}.HtwwCHPI_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .HtwwCHPI_2{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}.HtwwCHPI_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .HtwwCHPI_3{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}.HtwwCHPI_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .HtwwCHPI_4{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}.HtwwCHPI_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .HtwwCHPI_5{animation:HtwwCHPI_draw 5000ms ease-in-out 0ms forwards;}@keyframes HtwwCHPI_draw{100%{stroke-dashoffset:0;}}@keyframes HtwwCHPI_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>Delphinus</h3>
+                        <p class="whiteparagraphtext">Delphinus, or "dolphin" in Latin, is visible in late summer in the Northern Hemisphere.</p>
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="flex-container">
+
+
+                <!--Cassiopeia -->
+                <div style="flex-basis: 250px" class="constellationinfo" id="cassiopeianame">
+                    <svg id="const-cassiopeia" width="138px" height="152px" viewBox="0 0 138 152" version="1.1" xmlns="http://www.w3.org/2000/svg" class="" style="" onMouseEnter="const4.reset().play();">
+                        <g id="cassiopeia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path id="Path-4" stroke="#FFFFFF" stroke-width="4" d="M63.644237,112L90.9190706,85.7024555L65.5154173,65.0551516L75.895377,46.4729474L44.4303118,33.6926024" class="aaJDodbT_0"></path>
+                            <path id="Star" fill="#EBD7FB" d="M44.5,37.75L40.6793959,39.7586105L41.4090663,35.5043052L38.3181326,32.4913895L42.5896979,31.8706948L44.5,28L46.4103021,31.8706948L50.6818674,32.4913895L47.5909337,35.5043052L48.3206041,39.7586105Z" class="aaJDodbT_1"></path>
+                            <path id="Star" fill="#EBD7FB" d="M74.5,49.75L70.6793959,51.7586105L71.4090663,47.5043052L68.3181326,44.4913895L72.5896979,43.8706948L74.5,40L76.4103021,43.8706948L80.6818674,44.4913895L77.5909337,47.5043052L78.3206041,51.7586105Z" class="aaJDodbT_2"></path>
+                            <path id="Star" fill="#EBD7FB" d="M65.5,69.75L61.6793959,71.7586105L62.4090663,67.5043052L59.3181326,64.4913895L63.5896979,63.8706948L65.5,60L67.4103021,63.8706948L71.6818674,64.4913895L68.5909337,67.5043052L69.3206041,71.7586105Z" class="aaJDodbT_3"></path>
+                            <path id="Star" fill="#EBD7FB" d="M90.5,89.75L86.6793959,91.7586105L87.4090663,87.5043052L84.3181326,84.4913895L88.5896979,83.8706948L90.5,80L92.4103021,83.8706948L96.6818674,84.4913895L93.5909337,87.5043052L94.3206041,91.7586105Z" class="aaJDodbT_4"></path>
+                            <path id="Star" fill="#EBD7FB" d="M63.5,115.75L59.6793959,117.75861L60.4090663,113.504305L57.3181326,110.49139L61.5896979,109.870695L63.5,106L65.4103021,109.870695L69.6818674,110.49139L66.5909337,113.504305L67.3206041,117.75861Z" class="aaJDodbT_5"></path>
+                        </g>
+                        <style data-made-with="vivus-instant">.aaJDodbT_0{stroke-dasharray:126 128;stroke-dashoffset:127;}.start .aaJDodbT_0{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}.aaJDodbT_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .aaJDodbT_1{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}.aaJDodbT_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .aaJDodbT_2{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}.aaJDodbT_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .aaJDodbT_3{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}.aaJDodbT_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .aaJDodbT_4{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}.aaJDodbT_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .aaJDodbT_5{animation:aaJDodbT_draw 5000ms ease-in-out 0ms forwards;}@keyframes aaJDodbT_draw{100%{stroke-dashoffset:0;}}@keyframes aaJDodbT_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>Cassiopeia</h3>
+                        <p class="whiteparagraphtext">Known for its distinctive "W" shape, Cassiopeia is named after a queen in Greek mythology. It is best seen from September to November in the Northern Hemisphere.</p>
+                    </div>
+                </div>
+
+                <!-- Orion --->     
+                <div style="flex-basis: 250px" class="constellationinfo" id="orionname">
+                    <svg id="const-orion" width="275px" height="316px" viewBox="0 0 275 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="" style="" onMouseEnter="const5.reset().play();">
+                        <g id="orion-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Group" transform="translate(43.000000, 26.000000)">
+                                <path d="M131.724963,247.043821 L62.466582,259.100895 L79.1706129,206.644021 L92.218784,198.075763 L101.256312,192.107232 L130.953734,247.043821 L101.256312,192.107232 L105.70781,167.495165 L111.072179,137.835883 L176.084449,115.614566 L170.091574,87.1791028 C151.568999,80.425651 144.099097,77.5663228 147.681867,78.601118 L152.140074,80.6109234 C156.142055,81.7667976 162.034049,83.8467449 169.816056,86.8507652 C173.358224,100.938639 175.611382,110.864428 176.575528,116.62813 C177.120973,119.888818 179.035174,127.521953 182.318133,139.527535 L183.681867,165.857355 L173.853181,174.111476 L183.681867,165.857355 L182.318133,139.527535 C179.4306,123.534627 176.874475,115.901492 174.649757,116.62813 C170.451803,117.999266 149.259277,124.789889 111.072179,137 C111.424004,137.795556 111.424004,138.074184 111.072179,137.835883 C109.313107,136.644416 100.679702,127.336282 85.1719636,109.911481 L45.1477007,132.526807 L79.1706129,206 L45.1477007,132.526807 L27.7087148,116.62813 C21.6758405,101.951832 18.0561779,93.2140916 16.8497269,90.4149075 C16.7774038,90.2471049 13.2764158,81.2793599 6.34676276,63.5116727 L25.3613344,58.2919882 L33.4750041,4.94328392 L25.3613344,58.2919882 L6.34676276,63.5116727 L7.46168302,11.324554" id="Path-6" stroke="#FFFFFF" stroke-width="3" class="PKTMIqFR_0"></path>
+                                <path id="Star" fill="#EBD7FB" d="M173.5,177.75L169.679396,179.75861L170.409066,175.504305L167.318133,172.49139L171.589698,171.870695L173.5,168L175.410302,171.870695L179.681867,172.49139L176.590934,175.504305L177.320604,179.75861Z" class="PKTMIqFR_1"></path>
+                                <path id="Star" fill="#EBD7FB" d="M182.5,167.75L178.679396,169.75861L179.409066,165.504305L176.318133,162.49139L180.589698,161.870695L182.5,158L184.410302,161.870695L188.681867,162.49139L185.590934,165.504305L186.320604,169.75861Z" class="PKTMIqFR_2"></path>
+                                <path id="Star" fill="#EBD7FB" d="M182.5,143.75L178.679396,145.75861L179.409066,141.504305L176.318133,138.49139L180.589698,137.870695L182.5,134L184.410302,137.870695L188.681867,138.49139L185.590934,141.504305L186.320604,145.75861Z" class="PKTMIqFR_3"></path>
+                                <path id="Star" fill="#EBD7FB" d="M176.5,119.75L172.679396,121.75861L173.409066,117.504305L170.318133,114.49139L174.589698,113.870695L176.5,110L178.410302,113.870695L182.681867,114.49139L179.590934,117.504305L180.320604,121.75861Z" class="PKTMIqFR_4"></path>
+                                <path id="Star" fill="#EBD7FB" d="M167.5,88.75L163.679396,90.7586105L164.409066,86.5043052L161.318133,83.4913895L165.589698,82.8706948L167.5,79L169.410302,82.8706948L173.681867,83.4913895L170.590934,86.5043052L171.320604,90.7586105Z" class="PKTMIqFR_5"></path>
+                                <path id="Star" fill="#EBD7FB" d="M145.5,81.25L141.679396,83.2586105L142.409066,79.0043052L139.318133,75.9913895L143.589698,75.3706948L145.5,71.5L147.410302,75.3706948L151.681867,75.9913895L148.590934,79.0043052L149.320604,83.2586105Z" class="PKTMIqFR_6"></path>
+                                <path id="Star" fill="#EBD7FB" d="M85.5,113.75L81.6793959,115.75861L82.4090663,111.504305L79.3181326,108.49139L83.5896979,107.870695L85.5,104L87.4103021,107.870695L91.6818674,108.49139L88.5909337,111.504305L89.3206041,115.75861Z" class="PKTMIqFR_7"></path>
+                                <path id="Star" fill="#EBD7FB" d="M44.5,135.75L40.6793959,137.75861L41.4090663,133.504305L38.3181326,130.49139L42.5896979,129.870695L44.5,126L46.4103021,129.870695L50.6818674,130.49139L47.5909337,133.504305L48.3206041,137.75861Z" class="PKTMIqFR_8"></path>
+                                <path id="Star" fill="#EBD7FB" d="M27.5,119.75L23.6793959,121.75861L24.4090663,117.504305L21.3181326,114.49139L25.5896979,113.870695L27.5,110L29.4103021,113.870695L33.6818674,114.49139L30.5909337,117.504305L31.3206041,121.75861Z" class="PKTMIqFR_9"></path>
+                                <path id="Star" fill="#EBD7FB" d="M7.5,66.75L3.67939586,68.7586105L4.40906632,64.5043052L1.31813264,61.4913895L5.58969793,60.8706948L7.5,57L9.41030207,60.8706948L13.6818674,61.4913895L10.5909337,64.5043052L11.3206041,68.7586105Z" class="PKTMIqFR_10"></path>
+                                <path id="Star" fill="#EBD7FB" d="M24.5,59.75L20.6793959,61.7586105L21.4090663,57.5043052L18.3181326,54.4913895L22.5896979,53.8706948L24.5,50L26.4103021,53.8706948L30.6818674,54.4913895L27.5909337,57.5043052L28.3206041,61.7586105Z" class="PKTMIqFR_11"></path>
+                                <path id="Star" fill="#EBD7FB" d="M33.5,9.75L29.6793959,11.7586105L30.4090663,7.50430523L27.3181326,4.49138954L31.5896979,3.87069477L33.5,0L35.4103021,3.87069477L39.6818674,4.49138954L36.5909337,7.50430523L37.3206041,11.7586105Z" class="PKTMIqFR_12"></path>
+                                <path id="Star" fill="#EBD7FB" d="M6.5,15.75L2.67939586,17.7586105L3.40906632,13.5043052L0.318132644,10.4913895L4.58969793,9.87069477L6.5,6L8.41030207,9.87069477L12.6818674,10.4913895L9.59093368,13.5043052L10.3206041,17.7586105Z" class="PKTMIqFR_13"></path>
+                                <path id="Star" fill="#EBD7FB" d="M111.5,141.75L107.679396,143.75861L108.409066,139.504305L105.318133,136.49139L109.589698,135.870695L111.5,132L113.410302,135.870695L117.681867,136.49139L114.590934,139.504305L115.320604,143.75861Z" class="PKTMIqFR_14"></path>
+                                <path id="Star" fill="#EBD7FB" d="M102.5,194.75L98.6793959,196.75861L99.4090663,192.504305L96.3181326,189.49139L100.589698,188.870695L102.5,185L104.410302,188.870695L108.681867,189.49139L105.590934,192.504305L106.320604,196.75861Z" class="PKTMIqFR_15"></path>
+                                <path id="Star" fill="#EBD7FB" d="M130.5,250.75L126.679396,252.75861L127.409066,248.504305L124.318133,245.49139L128.589698,244.870695L130.5,241L132.410302,244.870695L136.681867,245.49139L133.590934,248.504305L134.320604,252.75861Z" class="PKTMIqFR_16"></path>
+                                <path id="Star" fill="#EBD7FB" d="M62.5,262.75L58.6793959,264.75861L59.4090663,260.504305L56.3181326,257.49139L60.5896979,256.870695L62.5,253L64.4103021,256.870695L68.6818674,257.49139L65.5909337,260.504305L66.3206041,264.75861Z" class="PKTMIqFR_17"></path>
+                                <path id="Star" fill="#EBD7FB" d="M91.5,201.75L87.6793959,203.75861L88.4090663,199.504305L85.3181326,196.49139L89.5896979,195.870695L91.5,192L93.4103021,195.870695L97.6818674,196.49139L94.5909337,199.504305L95.3206041,203.75861Z" class="PKTMIqFR_18"></path>
+                                <path id="Star" fill="#EBD7FB" d="M80.5,209.75L76.6793959,211.75861L77.4090663,207.504305L74.3181326,204.49139L78.5896979,203.870695L80.5,200L82.4103021,203.870695L86.6818674,204.49139L83.5909337,207.504305L84.3206041,211.75861Z" class="PKTMIqFR_19"></path>
+                            </g>
+                        </g>
+                        <style data-made-with="vivus-instant">.PKTMIqFR_0{stroke-dasharray:1231 1233;stroke-dashoffset:1232;}.start .PKTMIqFR_0{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_1{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_2{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_3{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_4{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_5{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_6{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_6{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_7{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_7{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_8{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_8{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_9{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_9{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_10{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_10{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_11{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_11{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_12{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_12{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_13{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_13{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_14{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_14{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_15{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_15{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_16{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_16{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_17{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_17{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_18{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_18{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}.PKTMIqFR_19{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PKTMIqFR_19{animation:PKTMIqFR_draw 5000ms ease-in-out 0ms forwards;}@keyframes PKTMIqFR_draw{100%{stroke-dashoffset:0;}}@keyframes PKTMIqFR_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>Orion</h3>
+                        <p class="whiteparagraphtext">One of the most recognizable constellations in the night sky, Orion can be seen anywhere in the world. Most notably, Orion's "belt" consists of 3 stars stretching across the constellation's "hips".</p>
+                    </div>
+                </div>
+
+                <!-- Little Dipper -->
+                <div style="flex-basis: 250px" class="constellationinfo" id="littledippername">
+                    <svg id="const-littledipper" width="261px" height="141px" viewBox="0 0 261 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="" style="" onMouseEnter="const6.reset().play();">
+                        <g id="the-little-dipper-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path id="Path-5" stroke="#FFFFFF" stroke-width="4" d="M230.717079,83.7482674L187.104435,72.7586105L141.871607,60.0897748L104.259415,63.6422521L53.6056357,99.8434212L28.3181326,77.7655155L79.8830672,35.5783336L104.259415,63.6422521" class="GwwXrQBu_0"></path>
+                            <path id="Star" fill="#EBD7FB" d="M230.5,86.75L226.679396,88.7586105L227.409066,84.5043052L224.318133,81.4913895L228.589698,80.8706948L230.5,77L232.410302,80.8706948L236.681867,81.4913895L233.590934,84.5043052L234.320604,88.7586105Z" class="GwwXrQBu_1"></path>
+                            <path id="Star" fill="#EBD7FB" d="M186.5,75.75L182.679396,77.7586105L183.409066,73.5043052L180.318133,70.4913895L184.589698,69.8706948L186.5,66L188.410302,69.8706948L192.681867,70.4913895L189.590934,73.5043052L190.320604,77.7586105Z" class="GwwXrQBu_2"></path>
+                            <path id="Star" fill="#EBD7FB" d="M141.5,63.75L137.679396,65.7586105L138.409066,61.5043052L135.318133,58.4913895L139.589698,57.8706948L141.5,54L143.410302,57.8706948L147.681867,58.4913895L144.590934,61.5043052L145.320604,65.7586105Z" class="GwwXrQBu_3"></path>
+                            <path id="Star" fill="#EBD7FB" d="M103.5,67.75L99.6793959,69.7586105L100.409066,65.5043052L97.3181326,62.4913895L101.589698,61.8706948L103.5,58L105.410302,61.8706948L109.681867,62.4913895L106.590934,65.5043052L107.320604,69.7586105Z" class="GwwXrQBu_4"></path>
+                            <path id="Star" fill="#EBD7FB" d="M79.5,38.75L75.6793959,40.7586105L76.4090663,36.5043052L73.3181326,33.4913895L77.5896979,32.8706948L79.5,29L81.4103021,32.8706948L85.6818674,33.4913895L82.5909337,36.5043052L83.3206041,40.7586105Z" class="GwwXrQBu_5"></path>
+                            <path id="Star" fill="#EBD7FB" d="M52.5,102.75L48.6793959,104.75861L49.4090663,100.504305L46.3181326,97.4913895L50.5896979,96.8706948L52.5,93L54.4103021,96.8706948L58.6818674,97.4913895L55.5909337,100.504305L56.3206041,104.75861Z" class="GwwXrQBu_6"></path>
+                            <path id="Star" fill="#EBD7FB" d="M28.5,81.75L24.6793959,83.7586105L25.4090663,79.5043052L22.3181326,76.4913895L26.5896979,75.8706948L28.5,72L30.4103021,75.8706948L34.6818674,76.4913895L31.5909337,79.5043052L32.3206041,83.7586105Z" class="GwwXrQBu_7"></path>
+                        </g>
+                        <style data-made-with="vivus-instant">.GwwXrQBu_0{stroke-dasharray:330 332;stroke-dashoffset:331;}.start .GwwXrQBu_0{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_1{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_1{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_2{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_2{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_3{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_3{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_4{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_5{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_5{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_6{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_6{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}.GwwXrQBu_7{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .GwwXrQBu_7{animation:GwwXrQBu_draw 5000ms ease-in-out 0ms forwards;}@keyframes GwwXrQBu_draw{100%{stroke-dashoffset:0;}}@keyframes GwwXrQBu_fade{0%{stroke-opacity:1;}95.65217391304348%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+                    <div class="constellationdescription">
+                        <h3>The Little Dipper</h3>
+                        <p class="whiteparagraphtext">Famous for its navigational powers that guided sailors and slaves to safety, The Little Dipper is arguably the most important constellation in the night sky. Polaris, the North Star, marks the end of the Little Dipper's handle and always points directionally north.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Break between sections -->
+        <section class=blackbg>
+            <div class="container">
+            </div>
+        </section>
+
+        <!-- Post Processing Section -->
+        <section id="postprocessing">
+            <div class="container">
+                <div class="container" id="postprocesstext">
+                    <h1>Post-Processing</h1>
+                    <p class="grayparagraphtext">Lightroom 4 and Photoshop CS6 are excellent choices to edit RAW photos. This includes color correction, basic luminosity control, contrast, sharpening, and noise reduction. After finishing in Lightroom, move to Photoshop CS6. Use luminosity masks to achieve ultimate control by increasing the brightness of the stars by leaving dark areas of the photo untouched. </p>
+                    <br><br><br>
+                </div>
+
+                <div class="twentytwenty-container" id="twentytwenty">
+                    <!-- The before image is first -->
+                    <img src="img/before.jpg"/>
+                    <!-- The after image is last -->
+                    <img src="img/after.jpg"/>
+                </div>   
+            </div>
+
+            <div class="flex-container">
+                <p class="whiteparagraphtext">Download the latest versions of Photoshop and Lightroom:</p>
+            </div>
+            <div class="flex-container" id="icons">
+                <div class="adobe flex-basis: 250px">
+                    <a href="https://www.adobe.com/products/photoshop.html">
+                        <img src="img/PhotoshopIcon.png">
+                    </a>
+                </div>
+                <div class="adobe flex-basis: 250px">
+                    <a href="https://www.adobe.com/products/photoshop-lightroom.html">
+                        <img src="img/LightroomIcon.png">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black small text-center text-white-50">
+            <div class="container">
+                Copyright &copy; Molly Vierhile 2018
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+        <script src="js/jquery.event.move.js" type="text/javascript"></script>
+        <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+        <script src="js/starjavascript.js"></script>
+
+        <script> 
+            const1 = new Vivus('const-big-dipper', {duration: 200});
+            const2 = new Vivus('const-pegasus', {duration: 200});
+            const3 = new Vivus('const-delphinus', {duration: 200});
+            const4 = new Vivus('const-cassiopeia', {duration: 200});
+            const5 = new Vivus('const-orion', {duration: 500});
+            const6 = new Vivus('const-littledipper', {duration: 200});
+        </script>
+
+        <script>
+            $(function(){
+                $("#twentytwenty").twentytwenty();
+            });    
+        </script>
+
+    </body>
+</html>
